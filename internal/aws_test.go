@@ -44,7 +44,7 @@ func (s *AwsTest) SetUpSuite(t *C) {
 }
 
 func (s *AwsTest) TestRegionDetection(t *C) {
-	s.fs.bucket = "goofys-eu-west-1.kahing.xyz"
+	s.fs.bucket = "goofys-eu-west-1.ieee0824.xyz"
 
 	err := s.fs.detectBucketLocationByHEAD()
 	t.Assert(err, IsNil)
